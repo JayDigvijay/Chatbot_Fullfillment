@@ -25,24 +25,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     agent.add(`I didn't understand`);
     agent.add(`I'm sorry, can you try again?`);
   }
-  function tnd(agent) {
-    var d = new Date();
-    var day = d.getDay();
-   	var hour = d.getHours(), min = d.getMinutes();
-    if((min + 30) >= 60){
-      hour ++;
-    }
-    min += 30;
-    min %= 60;
-    hour += 5;
-    if(hour >= 24){
-      day++;
-    }
-    hour %= 24;
-    
-    agent.add(`The time is ` + hour + `:` + min + ` and the day of the week is ` + day);
-    
-  }
+  
 function rs(agent){
  var d = new Date();
     var day = d.getDay();
@@ -85,7 +68,6 @@ return admin.database().ref('Class').once("value").then((snapshot) => {
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
-  intentMap.set('tnd', tnd);
   intentMap.set('rs', rs);
   agent.handleRequest(intentMap);
 });
