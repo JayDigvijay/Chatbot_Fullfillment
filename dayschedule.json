@@ -1,0 +1,164 @@
+{
+  "id": "95f11446-5602-4562-ba9f-4d85592300fa",
+  "name": "dayschedule",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ce14c639-9539-4685-a085-ebf5b7a65fd1",
+          "required": false,
+          "dataType": "@Weekdays",
+          "name": "weekday",
+          "value": "$weekday",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "defaultValue": "ref",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "26d3c5a7-545f-4eb7-b4d4-56d736c1354a",
+      "data": [
+        {
+          "text": "Show me my classes ",
+          "userDefined": false
+        },
+        {
+          "text": "on Monday",
+          "alias": "weekday",
+          "meta": "@Weekdays",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a870f591-25e1-4c2f-b098-1b1e7557e5cd",
+      "data": [
+        {
+          "text": "Okay, what classes do I have ",
+          "userDefined": false
+        },
+        {
+          "text": "on Monday",
+          "alias": "weekday",
+          "meta": "@Weekdays",
+          "userDefined": false
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "74c99d65-563d-4ca6-91ca-3079e95e3528",
+      "data": [
+        {
+          "text": "Classes on ",
+          "userDefined": false
+        },
+        {
+          "text": "Thursday",
+          "alias": "weekday",
+          "meta": "@Weekdays",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3a5f5649-a1da-4552-9964-df8f90728017",
+      "data": [
+        {
+          "text": "Tuesday",
+          "alias": "weekday",
+          "meta": "@Weekdays",
+          "userDefined": false
+        },
+        {
+          "text": "'s schedule",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "22b8e293-88d6-4435-b1fa-29f71fabd0ce",
+      "data": [
+        {
+          "text": "What is my schedule on ",
+          "userDefined": false
+        },
+        {
+          "text": "Monday",
+          "alias": "weekday",
+          "meta": "@Weekdays",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6ed7d33c-cbd7-42d1-ae27-8ac0504e9318",
+      "data": [
+        {
+          "text": "Show my schedule for  ",
+          "userDefined": false
+        },
+        {
+          "text": "Monday",
+          "alias": "weekday",
+          "meta": "@Weekdays",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}
