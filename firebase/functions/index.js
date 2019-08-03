@@ -25,7 +25,26 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     agent.add(`I didn't understand`);
     agent.add(`I'm sorry, can you try again?`);
   }
-  
+  function dayschedule(agent) {
+ 	const weekday = agent.parameters.weekday; 
+    //agent.add(weekday);
+    var start = 1;
+    var i;
+	if(weekday == 7)
+  		agent.add(`No classes on your schedule. Enjoy!`);
+	else
+		agent.add(`Here is your schedule for the day-`);  
+	return admin.database().ref('Class').once("value").then((snapshot) => {
+  for(i = start; i <11; i++){
+    
+    		var key = weekday + "," + i;
+    		var time = i+7;
+    		var classtime = snapshot.child(key).val();
+   		  agent.add(`At `+ time + `:00 hours, you have a ` + classtime);
+  }
+});
+ }
+                                                      
 function rs(agent){
  var d = new Date();
     var day = d.getDay();
@@ -46,7 +65,9 @@ function rs(agent){
   //hour = t;
   var start = hour-6;
   var i;
-  
+if(hour > 17 || day == 7)
+  agent.add(`No classes on your schedule. Enjoy!`);
+else
 agent.add(`Here is your schedule for the rest of the day-`);  
 return admin.database().ref('Class').once("value").then((snapshot) => {
   for(i = start; i <11; i++){
@@ -63,11 +84,12 @@ return admin.database().ref('Class').once("value").then((snapshot) => {
 }
 
 
-
+//All the given functions are invoked using their names.
  
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
+  intentMap.set('dayschedule', dayschedule);
   intentMap.set('rs', rs);
   agent.handleRequest(intentMap);
 });
