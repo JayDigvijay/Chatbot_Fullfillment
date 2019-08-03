@@ -1,0 +1,177 @@
+{
+  "id": "240b958b-3055-42dc-b143-dbd0e174e252",
+  "name": "todayschedule",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5d106bb1-790d-40f6-9f6e-b200824fdca6",
+          "required": false,
+          "dataType": "@Weekdays",
+          "name": "Weekdays",
+          "value": "$Weekdays",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "733e4a09-d750-467b-bb6a-c3a2736d3912",
+      "data": [
+        {
+          "text": "What classes do I have ",
+          "userDefined": false
+        },
+        {
+          "text": "today",
+          "alias": "Weekdays",
+          "meta": "@Weekdays",
+          "userDefined": false
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "07ed61ba-4c35-4003-8d74-cc479f8090b1",
+      "data": [
+        {
+          "text": "Today",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": "'s Schedule",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "81af4fee-9963-49d3-874e-d40c2ae5a5c1",
+      "data": [
+        {
+          "text": "Next?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a59dc319-8bb2-464b-a824-997f1d9abfc5",
+      "data": [
+        {
+          "text": "When  is the next lecture?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "fba4b40c-e9a4-4275-9a0d-f23a69353a35",
+      "data": [
+        {
+          "text": "Next lecture",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "af7a2cd7-4d14-4cd7-935b-9e122a3c72e4",
+      "data": [
+        {
+          "text": "Next class",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "7ab89820-0113-4865-8fcb-0db4dbd73f26",
+      "data": [
+        {
+          "text": "Give me my schedule",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e95b339a-4d18-4990-8fe1-b0ee916ca6a0",
+      "data": [
+        {
+          "text": "My Schedule",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "23d192c6-563b-40d0-ab12-ea3dfbef4e35",
+      "data": [
+        {
+          "text": "rs",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

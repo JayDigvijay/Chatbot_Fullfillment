@@ -1,0 +1,62 @@
+{
+  "id": "fc3e24b6-38a5-4f7d-a800-73c5b6738501",
+  "name": "Weekdays",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "1",
+      "synonyms": [
+        "1",
+        "Monday",
+        "monday"
+      ]
+    },
+    {
+      "value": "2",
+      "synonyms": [
+        "2",
+        "Tuesday",
+        "tuesday"
+      ]
+    },
+    {
+      "value": "3",
+      "synonyms": [
+        "3",
+        "Wednesday"
+      ]
+    },
+    {
+      "value": "4",
+      "synonyms": [
+        "4",
+        "Thursday"
+      ]
+    },
+    {
+      "value": "5",
+      "synonyms": [
+        "5",
+        "Friday"
+      ]
+    },
+    {
+      "value": "6",
+      "synonyms": [
+        "6",
+        "Saturday"
+      ]
+    },
+    {
+      "value": "7",
+      "synonyms": [
+        "7",
+        "Sunday"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}
